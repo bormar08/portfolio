@@ -1,0 +1,163 @@
+html, head, body
+{
+    margin: 0;
+    padding: 0;
+}
+body.background{
+    background: rgb(41, 41, 41);
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+div.columnL{
+    background: rgb(29, 29, 29);
+    height: 100vh;
+    float: left;
+    width: 180px;
+    position: fixed;
+    overflow: auto;
+}
+
+div.columnR{
+    margin-left: 180px;
+}
+
+.button{
+    background-color: rgb(29, 29, 29);
+    border: none;
+    font-size: 25px;
+    width:120px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.button:hover{
+    background: rgb(31, 31, 31);
+    color:purple;
+}
+
+.white{
+    color: rgb(212, 212, 212);
+}
+
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.leftSide{
+    margin-left: 50px;
+    float: left;
+}
+
+.rightSide{
+    width: 25%;
+    float: right;
+    position: relative;
+    top: 1vw;
+    right: 1.5vw;
+}
+
+.upperDiv{
+    background-color: rgb(31, 31, 31);
+}
+
+.gridContainer{
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 2vw;
+    grid-template-columns: auto auto auto;
+    margin-top: 10px;
+    margin-bottom: 12%;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.gridItem{
+    margin-top: 10px; 
+    margin-bottom:50px;
+}
+
+.gridTitle {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.gridHeader {
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0.5vw;
+    background-color: rgb(34, 34, 34);
+    padding: 0.5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.darker{
+    background-color: rgb(24, 24, 24);
+}
+
+
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .font-size-small{
+        font-size: 12px;
+    }
+    
+    .font-size-medium{
+        font-size: 20px;
+    }
+    
+    .font-size-large{
+        font-size: 25px;
+    }
+
+ }
+
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    .font-size-small{
+        font-size: 18px;
+    }
+    
+    .font-size-medium{
+        font-size: 22px;
+    }
+    
+    .font-size-large{
+        font-size: 30px;
+    }
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    .font-size-small{
+        font-size: 20px;
+    }
+    
+    .font-size-medium{
+        font-size: 30px;
+    }
+    
+    .font-size-large{
+        font-size: 35px;
+    }
+
+ }
+ 
+
+
