@@ -9,13 +9,13 @@ let job = {
 let langs = {
     html5:{
         image: {
-            src:"./logos/html5-logo.svg"
+            src:"./logos/html5-logo.png"
         },
         text: "I have designed this website in HTML5"
     },
     python:{
         image: {
-            src:"./logos/python-logo.svg"
+            src:"./logos/python-logo.png"
         },
         text: "I have programmed in python programs that would handle file I/O."
     },
