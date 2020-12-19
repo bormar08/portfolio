@@ -26,7 +26,7 @@ let langs = {
         image:{
             src:"./logos/JavaScript-logo.svg"
         },
-        text:"Developed a restaurant website that could take in and send orders as well as register and save new users in a database. This website is also made with javascript"
+        text:"I have developed applications using ES6 such as a restaurant website that could take in and send orders as well as register and save new users in a database. This website is also made with javascript"
     },
     C:{
         title:"C",
