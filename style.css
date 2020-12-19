@@ -100,7 +100,6 @@ p.margins {
 }
 
 
- /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
     .font-size-small{
         font-size: 12px;
@@ -116,8 +115,21 @@ p.margins {
 
  }
 
+ @media only screen and (min-width: 600px) {
+    .font-size-small{
+        font-size: 12px;
+    }
+    
+    .font-size-medium{
+        font-size: 20px;
+    }
+    
+    .font-size-large{
+        font-size: 25px;
+    }
+} 
 
- /* Medium devices (landscape tablets, 768px and up) */
+
  @media only screen and (min-width: 768px) {
     .font-size-small{
         font-size: 18px;
@@ -128,12 +140,11 @@ p.margins {
     }
     
     .font-size-large{
-        font-size: 30px;
+        font-size: 20px;
     }
 
  }
  
- /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
     .font-size-small{
         font-size: 20px;
