@@ -312,9 +312,47 @@ let recordGrades = {
             grade:"A-"
         },
         course10:{
+            courseCode:"PSYC 1001",
+            courseName:"Introduction to Psychology 1",
+            grade:"A"
+        },
+        course11:{
             courseCode:"STAT 2507",
             courseName:"Introduction to Statistical Modeling 1",
             grade:"A+"
+        }
+    },
+    year3:{
+        title: "Year Three",
+        course1:{
+            courseCode:"COMP 1601",
+            courseName:"Introduction to Mobile Application Development",
+            grade:"In Progress"
+        },
+        course2:{
+            courseCode:"COMP 2404",
+            courseName:"Introduction to Software Engineering",
+            grade:"In Progress"
+        },
+        course3:{
+            courseCode:"COMP 3000",
+            courseName:"Operating Systems",
+            grade:"In Progress"
+        },
+        course4:{
+            courseCode:"COMP 3004",
+            courseName:"Object-Oriented Software Engineering",
+            grade:"In Progress"
+        },
+        course5:{
+            courseCode:"COMP 3005",
+            courseName:"Database Management Systems",
+            grade:"In Progress"
+        },
+        course6:{
+            courseCode:"PSYC 1002",
+            courseName:"Introduction to Psychology 2",
+            grade:"In Progress"
         }
     }
 };
