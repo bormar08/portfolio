@@ -21,7 +21,7 @@ let langs = {
     },
     javascript:{
         image:{
-            src:"./logos/JavaScript-logo.svg"
+            src:"./logos/JavaScript-logo.png"
         },
         text:"Developed a restaurant website that could take in and send orders as well as register and save new users in a database. This website is also made with javascript"
     },
