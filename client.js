@@ -9,31 +9,31 @@ let job = {
 let langs = {
     html5:{
         image: {
-            src:"./logos/html5-logo.png"
+            src:"./logos/html5-logo.svg"
         },
         text: "I have designed this website in HTML5"
     },
     python:{
         image: {
-            src:"./logos/python-logo.png"
+            src:"./logos/python-logo.svg"
         },
         text: "I have programmed in python programs that would handle file I/O."
     },
     javascript:{
         image:{
-            src:"./logos/Javascript-logo.png"
+            src:"./logos/Javascript-logo.svg"
         },
         text:"Developed a restaurant website that could take in and send orders as well as register and save new users in a database. This website is also made with javascript"
     },
     C:{
         image:{
-            src:"./logos/C-logo.png"
+            src:"./logos/C-logo.svg"
         },
         text:"Created programs that took advangtade of multithreading to reduce computing times."
     },
     Cpp:{
         image:{
-            src:"./logos/Cpp-logo.png"
+            src:"./logos/Cpp-logo.svg"
         },
         text:"I have experience coding C++ on the linux operating system using concepts such as: polymorphism, encapsulation, inheritance, friendship, overloading, files, streams, exception handling, and template classes"
     },
@@ -45,7 +45,7 @@ let langs = {
     },
     Java:{
         image:{
-            src:"./logos/java-logo.png"
+            src:"./logos/java-logo.svg"
         },
         text:"I have experience coding in Java"
     },
@@ -63,7 +63,7 @@ let langs = {
     },
     CSS:{
         image:{
-            src:"./logos/CSS-logo.png"
+            src:"./logos/CSS-logo.svg"
         },
         text:"Developed websites using stylesheets in css. The style for this website is made with css and bootstrap to create a responsive design."
     },
