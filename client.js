@@ -21,7 +21,7 @@ let langs = {
     },
     javascript:{
         image:{
-            src:"./logos/JavaScript-logo.png"
+            src:"./logos/JavaScript-logo.svg"
         },
         text:"Developed a restaurant website that could take in and send orders as well as register and save new users in a database. This website is also made with javascript"
     },
@@ -309,11 +309,9 @@ let recordGrades = {
 
 function init(){
 
-    let leftColumn = document.getElementById("leftColumn");
     let title = document.createElement("h1");
     let image = document.createElement("img");
     let imageContainer = document.createElement("div");
-    let intro = document.createElement("p");
     let buttonsDiv = document.createElement("div");
     
     
@@ -330,11 +328,7 @@ function init(){
 
     buttonsDiv.style = "margin-bottom: 50px;";
     
-    
-    leftColumn.appendChild(title);
     imageContainer.appendChild(image);
-    leftColumn.appendChild(imageContainer);
-    leftColumn.appendChild(buttonsDiv);
     
     //BUTTONS
     let projectBtn = document.createElement("button");

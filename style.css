@@ -15,26 +15,18 @@ body.background{
     
 }
 
-div.columnL{
+nav.navigationBar{
     background: rgb(29, 29, 29);
-    height: 100vh;
-    float: left;
-    width: 180px;
     position: fixed;
-    overflow: auto;
 }
 
-div.columnR{
-    margin-left: 180px;
-}
+
 
 .button{
     background-color: rgb(29, 29, 29);
     border: none;
     font-size: 25px;
-    width:120px;
-    height: 50px;
-    margin-top: 30px;
+    margin-right: 30px;
 }
 
 .button:hover{
@@ -103,11 +95,6 @@ div.columnR{
     margin-right: 1vw;
     margin-bottom: 1.5vw;
 }
-
-.darker{
-    background-color: rgb(24, 24, 24);
-}
-
 
 
  /* Extra small devices (phones, 600px and down) */
