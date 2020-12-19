@@ -21,7 +21,7 @@ let langs = {
     },
     javascript:{
         image:{
-            src:"./logos/Javascript-logo.svg"
+            src:"./logos/JavaScript-logo.svg"
         },
         text:"Developed a restaurant website that could take in and send orders as well as register and save new users in a database. This website is also made with javascript"
     },
@@ -33,7 +33,7 @@ let langs = {
     },
     Cpp:{
         image:{
-            src:"./logos/Cpp-logo.svg"
+            src:"./logos/cpp-logo.svg"
         },
         text:"I have experience coding C++ on the linux operating system using concepts such as: polymorphism, encapsulation, inheritance, friendship, overloading, files, streams, exception handling, and template classes"
     },
@@ -63,7 +63,7 @@ let langs = {
     },
     CSS:{
         image:{
-            src:"./logos/CSS-logo.svg"
+            src:"./logos/css-logo.svg"
         },
         text:"Developed websites using stylesheets in css. The style for this website is made with css and bootstrap to create a responsive design."
     },
