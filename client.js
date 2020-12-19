@@ -357,18 +357,18 @@ function init(){
 //Home screen
 function home(){
 
-    let rightColumn = document.getElementById("rightColumn");
-    resetRightColumn(rightColumn);
-    loadUpperDiv(rightColumn);
-    loadGrid(rightColumn);
+    let main = document.getElementById("main");
+    resetmain(main);
+    loadUpperDiv(main);
+    loadGrid(main);
     
 }
 //Loads the upper div in the home page
-function loadUpperDiv(rightColumn){
+function loadUpperDiv(main){
 
     let upperDiv = document.createElement("div");
     upperDiv.className = "upperDiv container-fluid";
-    rightColumn.appendChild(upperDiv);
+    main.appendChild(upperDiv);
 
     //NAME
     let name = document.createElement("h");
@@ -395,11 +395,11 @@ function loadUpperDiv(rightColumn){
     
 }
 
-function loadGrid(rightColumn)
+function loadGrid(main)
 {
     let container = document.createElement("div");
     container.className = "container-fluid";
-    rightColumn.appendChild(container);
+    main.appendChild(container);
 
     
     let text = document.createElement("p");
@@ -438,28 +438,28 @@ function addRowItem(row,text,img){
 
 //Resume Screen
 function resume(){
-    let rightColumn = document.getElementById("rightColumn");
-    resetRightColumn(rightColumn);
-    loadResumeHeader(rightColumn);
-    loadResumeBody(rightColumn);
+    let main = document.getElementById("main");
+    resetmain(main);
+    loadResumeHeader(main);
+    loadResumemain(main);
 
 }
 
 //loads the name, location, phone number and email (header from resume in word doc)
-function loadResumeHeader(rightColumn){
+function loadResumeHeader(main){
     let title = document.createElement("h");
     title.innerHTML = me.firstName + " " + me.lastName;
     title.className = "center font white font-size-large";
     title.style = "margin-bottom:0px;";
-    rightColumn.appendChild(title);
+    main.appendChild(title);
     let info = document.createElement("p");
     info.innerHTML = me.city + ", " + me.province + ", " + me.postalCode + "<br>" + me.number + " | " + me.email;
     info.className = "center font white font-size-small";
     info.style = "margin-top:0px; margin-right:10px; margin-left:10px;";
-    rightColumn.appendChild(info);
+    main.appendChild(info);
 }
 
-function loadResumeBody(rightColumn){
+function loadResumemain(main){
     let keys = Object.entries(cv);
     for(let i = 0; i<keys.length; i++) {
         let info = Object.entries(keys[i][1]);
@@ -473,20 +473,20 @@ function loadResumeBody(rightColumn){
                 title.className = "white font font-size-small";
                 title.style = " margin-left: 4%;";
                 backDiv.appendChild(title);
-                rightColumn.appendChild(backDiv);
+                main.appendChild(backDiv);
             }else if(info[j][0] == "time"){
                 let time = document.createElement("p");
                 time.innerHTML = info[j][1];
                 time.style = "margin-bottom:10px; margin-top:0px;  float:right;text-align: right; margin-right:10%;";
                 time.className = "white font font-size-small";
-                rightColumn.appendChild(time);
+                main.appendChild(time);
             }
             else if(typeof info[j][1] == "string") {
                 let item = document.createElement("p");
                 item.style = "margin-left: 4%; margin-bottom:0px; margin-top:0px; margin-left: 4%;";
                 item.className = "white font font-size-small";
                 item.innerHTML = info[j][1];
-                rightColumn.appendChild(item);
+                main.appendChild(item);
             }else{
                 let list = Object.entries(info[j][1]);
                 let unordered = document.createElement("ul");
@@ -515,7 +515,7 @@ function loadResumeBody(rightColumn){
                     listItem.className = "white font font-size-small";
                     unordered.appendChild(listItem);
                 }
-                rightColumn.appendChild(unordered);
+                main.appendChild(unordered);
             }
         }
         
@@ -524,17 +524,17 @@ function loadResumeBody(rightColumn){
 
 //Record of grades screen
 function grades(){
-    let rightColumn = document.getElementById("rightColumn");
-    resetRightColumn(rightColumn);
-    loadGradesHeader(rightColumn);
-    loadGradesGrid(rightColumn);
+    let main = document.getElementById("main");
+    resetmain(main);
+    loadGradesHeader(main);
+    loadGradesGrid(main);
 }
 
-function loadGradesHeader(rightColumn){
-    loadResumeHeader(rightColumn);
+function loadGradesHeader(main){
+    loadResumeHeader(main);
     let backDiv = document.createElement("div");
     backDiv.style = "background-color: rgb(28, 28, 28);";
-    rightColumn.appendChild(backDiv);
+    main.appendChild(backDiv);
     let header = document.createElement("p");
     header.className = "font white font-size-small";
     header.style = "margin-left:20px;";
@@ -544,7 +544,7 @@ function loadGradesHeader(rightColumn){
     backDiv.appendChild(header);
 }
 
-function loadGradesGrid(rightColumn){
+function loadGradesGrid(main){
     let grid = document.createElement("div");
     grid.className = "grid-container";
 
@@ -567,10 +567,10 @@ function loadGradesGrid(rightColumn){
     }
     for(let j = 1; j< items.length; j++)
     {
-        let bodyObj = items[j];
-        for(let i =1; i< bodyObj.length;i++)
+        let mainObj = items[j];
+        for(let i =1; i< mainObj.length;i++)
         {
-            let obj = bodyObj[i];
+            let obj = mainObj[i];
             for(let item in obj)
             {
                 if(item == "title")
@@ -617,12 +617,12 @@ function loadGradesGrid(rightColumn){
         }
     }
 
-    rightColumn.appendChild(grid);
+    main.appendChild(grid);
 }
 
 //resets right column 
-function resetRightColumn(rightColumn){
-    while(rightColumn.firstChild){
-        rightColumn.removeChild(rightColumn.lastChild);
+function resetmain(main){
+    while(main.firstChild){
+        main.removeChild(main.lastChild);
     }
 }
