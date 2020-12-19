@@ -184,7 +184,7 @@ let cv = {
             item3:"Proposed adjustments to management to provide quality of life improvements for the employees"
         },
         CRA:{
-            time:"May 2020 - April 2020",
+            time:"May 2020 - April 2021",
             workTitle:"IT Analyst/Developer",
             workDescription:"Canada Revenue Agency, Ottawa, Ontario",
             item1:"Determined impacts of business requirements on the SAP system and wrote specificaions to meet those requirements",
