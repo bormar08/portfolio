@@ -20,7 +20,10 @@ nav.navigationBar{
     position: fixed;
 }
 
-
+p.margins {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
 
 .button{
     background-color: rgb(29, 29, 29);

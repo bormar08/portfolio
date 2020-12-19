@@ -559,7 +559,7 @@ function loadGradesGrid(rightColumn){
 
         let header = document.createElement("p");
         header.innerHTML = headerObj[key];
-        header.className = "font white center font-size-small";
+        header.className = "font white center font-size-small margins";
 
         backgroundDiv.appendChild(header);
 
@@ -580,7 +580,7 @@ function loadGradesGrid(rightColumn){
 
                     let title = document.createElement("p");
                     title.innerHTML = obj[item];
-                    title.className = "font white center font-size-small";
+                    title.className = "font white center font-size-small margins";
                     title.style = "margin-left:1vw";
                     backgroundDiv.appendChild(title);
                     grid.appendChild(backgroundDiv);
@@ -589,21 +589,21 @@ function loadGradesGrid(rightColumn){
                     let backgroundDiv = document.createElement("div");
                     backgroundDiv.className = "gridHeader";
                     let courseCode = document.createElement("p");
-                    courseCode.className = "font white center font-size-small"
+                    courseCode.className = "font white center font-size-small margins"
                     courseCode.innerHTML = obj[item].courseCode;
                     backgroundDiv.appendChild(courseCode);
                     
                     let backgroundDiv1 = document.createElement("div");
                     backgroundDiv1.className = "gridHeader";
                     let courseName = document.createElement("p");
-                    courseName.className = "font white center font-size-small"
+                    courseName.className = "font white center font-size-small margins"
                     courseName.innerHTML = obj[item].courseName;
                     backgroundDiv1.appendChild(courseName);
 
                     let backgroundDiv2 = document.createElement("div");
                     backgroundDiv2.className = "gridHeader";
                     let grade = document.createElement("p");
-                    grade.className = "font white center font-size-small"
+                    grade.className = "font white center font-size-small margins"
                     grade.innerHTML = obj[item].grade;
                     backgroundDiv2.appendChild(grade);
 
