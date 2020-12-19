@@ -359,10 +359,10 @@ let recordGrades = {
 
 function init(){
 
-    let title = document.createElement("h1");
-    let image = document.createElement("img");
-    let imageContainer = document.createElement("div");
-    let buttonsDiv = document.createElement("div");
+    const title = document.createElement("h1");
+    const image = document.createElement("img");
+    const imageContainer = document.createElement("div");
+    const buttonsDiv = document.createElement("div");
     
     
     title.className = "center white font-size-large container-fluid";
@@ -381,9 +381,9 @@ function init(){
     imageContainer.appendChild(image);
     
     //BUTTONS
-    let projectBtn = document.createElement("button");
-    let homeBtn = document.createElement("button");
-    let resumeBtn = document.createElement("button");
+    const projectBtn = document.createElement("button");
+    const homeBtn = document.createElement("button");
+    const resumeBtn = document.createElement("button");
     
 
     homeBtn.className = "button center font white";
@@ -407,7 +407,7 @@ function init(){
 //Home screen
 function home(){
 
-    let main = document.getElementById("main");
+    const main = document.getElementById("main");
     resetmain(main);
     loadUpperDiv(main);
     loadGrid(main);
@@ -416,19 +416,19 @@ function home(){
 //Loads the upper div in the home page
 function loadUpperDiv(main){
 
-    let upperDiv = document.createElement("div");
+    const upperDiv = document.createElement("div");
     upperDiv.className = "upperDiv container-fluid";
     main.appendChild(upperDiv);
 
     //NAME
-    let name = document.createElement("h");
+    const name = document.createElement("h");
     name.className = "center font white font-size-large";
     name.innerHTML = me.firstName + " " + me.lastName;
     upperDiv.appendChild(name);
 
 
     //JOB TITLE
-    let jobTitle = document.createElement("p");
+    const jobTitle = document.createElement("p");
     jobTitle.className = "center font font-size-small";
     jobTitle.style = "margin-top: 0px;";
     jobTitle.innerHTML = job.title;
@@ -437,7 +437,7 @@ function loadUpperDiv(main){
     
     //JOB DESCRIPTION
     
-    let jobDesc = document.createElement("p");
+    const jobDesc = document.createElement("p");
     jobDesc.className = "font white center font-size-small";
     jobDesc.style = "text-align:center; margin-top:0px;margin-top:10px;";
     jobDesc.innerHTML = job.description + "<br>" + "<br>";
@@ -447,18 +447,18 @@ function loadUpperDiv(main){
 
 function loadGrid(main)
 {
-    let container = document.createElement("div");
+    const container = document.createElement("div");
     container.className = "container-fluid";
     main.appendChild(container);
 
     
-    let text = document.createElement("p");
+    const text = document.createElement("p");
     text.innerHTML = "Programming Experience";
     text.className = "white center gridTitle font-size-large";
     container.appendChild(text);
 
-    let keys = Object.entries(langs);
-    let langRow = document.createElement("div");
+    const keys = Object.entries(langs);
+    const langRow = document.createElement("div");
         langRow.className = "row";
     for(let i in keys) {
         addRowItem(langRow,keys[i][1].title,keys[i][1].text,keys[i][1].image);
@@ -468,19 +468,19 @@ function loadGrid(main)
 }
 
 function addRowItem(row,title,text,img){
-    let container = document.createElement("div");
+    const container = document.createElement("div");
     container.className = "col-sm-4";
 
-    let image = document.createElement("img");
+    const image = document.createElement("img");
     image.src = img.src;
     image.style = "max-width:50px; max-height: 50px;";
     image.className = "img-fluid center";
 
-    let itemTitle = document.createElement("h");
+    const itemTitle = document.createElement("h");
     itemTitle.innerHTML = title;
     itemTitle.className = "center font-size-medium white";
 
-    let item = document.createElement("p");
+    const item = document.createElement("p");
     item.innerHTML = text;
     item.className = "center font-size-small white gridItem";
 
@@ -493,7 +493,7 @@ function addRowItem(row,title,text,img){
 
 //Resume Screen
 function resume(){
-    let main = document.getElementById("main");
+    const main = document.getElementById("main");
     resetmain(main);
     loadResumeHeader(main);
     loadResumemain(main);
@@ -502,12 +502,12 @@ function resume(){
 
 //loads the name, location, phone number and email (header from resume in word doc)
 function loadResumeHeader(main){
-    let title = document.createElement("h");
+    const title = document.createElement("h");
     title.innerHTML = me.firstName + " " + me.lastName;
     title.className = "center font white font-size-large";
     title.style = "margin-bottom:0px;";
     main.appendChild(title);
-    let info = document.createElement("p");
+    const info = document.createElement("p");
     info.innerHTML = me.city + ", " + me.province + ", " + me.postalCode + "<br>" + me.number + " | " + me.email;
     info.className = "center font white font-size-small";
     info.style = "margin-top:0px; margin-right:10px; margin-left:10px;";
@@ -515,36 +515,36 @@ function loadResumeHeader(main){
 }
 
 function loadResumemain(main){
-    let keys = Object.entries(cv);
+    const keys = Object.entries(cv);
     for(let i = 0; i<keys.length; i++) {
-        let info = Object.entries(keys[i][1]);
+        const info = Object.entries(keys[i][1]);
         for(let j = 0; j<info.length;j++) {
             if(info[j][0] == "title"){
-                let backDiv = document.createElement("div");
+                const backDiv = document.createElement("div");
                 backDiv.style = "background-color: rgb(28, 28, 28);";
 
-                let title = document.createElement("h1");
+                const title = document.createElement("h1");
                 title.innerHTML = info[j][1] + "<br>";
                 title.className = "white font font-size-small";
                 title.style = " margin-left: 4%;";
                 backDiv.appendChild(title);
                 main.appendChild(backDiv);
             }else if(info[j][0] == "time"){
-                let time = document.createElement("p");
+                const time = document.createElement("p");
                 time.innerHTML = info[j][1];
                 time.style = "margin-bottom:10px; margin-top:0px;  float:right;text-align: right; margin-right:10%;";
                 time.className = "white font font-size-small";
                 main.appendChild(time);
             }
             else if(typeof info[j][1] == "string") {
-                let item = document.createElement("p");
+                const item = document.createElement("p");
                 item.style = "margin-left: 4%; margin-bottom:0px; margin-top:0px; margin-left: 4%;";
                 item.className = "white font font-size-small";
                 item.innerHTML = info[j][1];
                 main.appendChild(item);
             }else{
-                let list = Object.entries(info[j][1]);
-                let unordered = document.createElement("ul");
+                const list = Object.entries(info[j][1]);
+                const unordered = document.createElement("ul");
                 unordered.style = "margin-bottom:1vw; margin-left: 1.5%; margin-right:4%;";
                 
                 let listItem;
@@ -579,7 +579,7 @@ function loadResumemain(main){
 
 //Record of grades screen
 function grades(){
-    let main = document.getElementById("main");
+    const main = document.getElementById("main");
     resetmain(main);
     loadGradesHeader(main);
     loadGradesGrid(main);
@@ -587,10 +587,10 @@ function grades(){
 
 function loadGradesHeader(main){
     loadResumeHeader(main);
-    let backDiv = document.createElement("div");
+    const backDiv = document.createElement("div");
     backDiv.style = "background-color: rgb(28, 28, 28);";
     main.appendChild(backDiv);
-    let header = document.createElement("p");
+    const header = document.createElement("p");
     header.className = "font white font-size-small";
     header.style = "margin-left:20px;";
     header.innerHTML =  "<br>" + me.firstName + " " + me.lastName + "<br>" + me.school + "<br>" + me.program + ", " + me.year + " Standing" + "<br>" + me.stream + ", " + me.minor + 
@@ -600,19 +600,19 @@ function loadGradesHeader(main){
 }
 
 function loadGradesGrid(main){
-    let grid = document.createElement("div");
+    const grid = document.createElement("div");
     grid.className = "grid-container";
 
-    let items = Object.entries(recordGrades);
+    const items = Object.entries(recordGrades);
 
-    let headerObj = items[0][1];
+    const headerObj = items[0][1];
     
     for(var key in headerObj)
     {
-        let backgroundDiv = document.createElement("div");
+        const backgroundDiv = document.createElement("div");
         backgroundDiv.className = "gridHeader";
 
-        let header = document.createElement("p");
+        const header = document.createElement("p");
         header.innerHTML = headerObj[key];
         header.className = "font white center font-size-small margins";
 
@@ -622,18 +622,18 @@ function loadGradesGrid(main){
     }
     for(let j = 1; j< items.length; j++)
     {
-        let mainObj = items[j];
+        const mainObj = items[j];
         for(let i =1; i< mainObj.length;i++)
         {
-            let obj = mainObj[i];
+            const obj = mainObj[i];
             for(let item in obj)
             {
                 if(item == "title")
                 {
-                    let backgroundDiv = document.createElement("div");
+                    const backgroundDiv = document.createElement("div");
                     backgroundDiv.className = "gridHeader gridTitle";
 
-                    let title = document.createElement("p");
+                    const title = document.createElement("p");
                     title.innerHTML = obj[item];
                     title.className = "font white center font-size-small margins";
                     title.style = "margin-left:1vw";
@@ -641,23 +641,23 @@ function loadGradesGrid(main){
                     grid.appendChild(backgroundDiv);
                 }else{
                     
-                    let backgroundDiv = document.createElement("div");
+                    const backgroundDiv = document.createElement("div");
                     backgroundDiv.className = "gridHeader";
-                    let courseCode = document.createElement("p");
+                    const courseCode = document.createElement("p");
                     courseCode.className = "font white center font-size-small margins"
                     courseCode.innerHTML = obj[item].courseCode;
                     backgroundDiv.appendChild(courseCode);
                     
-                    let backgroundDiv1 = document.createElement("div");
+                    const backgroundDiv1 = document.createElement("div");
                     backgroundDiv1.className = "gridHeader";
-                    let courseName = document.createElement("p");
+                    const courseName = document.createElement("p");
                     courseName.className = "font white center font-size-small margins"
                     courseName.innerHTML = obj[item].courseName;
                     backgroundDiv1.appendChild(courseName);
 
-                    let backgroundDiv2 = document.createElement("div");
+                    const backgroundDiv2 = document.createElement("div");
                     backgroundDiv2.className = "gridHeader";
-                    let grade = document.createElement("p");
+                    const grade = document.createElement("p");
                     grade.className = "font white center font-size-small margins"
                     grade.innerHTML = obj[item].grade;
                     backgroundDiv2.appendChild(grade);
