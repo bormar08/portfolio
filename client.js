@@ -8,72 +8,84 @@ let job = {
 
 let langs = {
     html5:{
+        title:"HTML5",
         image: {
             src:"./logos/html5-logo.png"
         },
         text: "I have designed this website in HTML5"
     },
     python:{
+        title:"Python",
         image: {
             src:"./logos/python-logo.png"
         },
         text: "I have programmed in python programs that would handle file I/O."
     },
     javascript:{
+        title:"Javascript",
         image:{
             src:"./logos/JavaScript-logo.svg"
         },
         text:"Developed a restaurant website that could take in and send orders as well as register and save new users in a database. This website is also made with javascript"
     },
     C:{
+        title:"C",
         image:{
             src:"./logos/C-logo.svg"
         },
         text:"Created programs that took advangtade of multithreading to reduce computing times."
     },
     Cpp:{
+        title:"C++",
         image:{
             src:"./logos/cpp-logo.svg"
         },
         text:"I have experience coding C++ on the linux operating system using concepts such as: polymorphism, encapsulation, inheritance, friendship, overloading, files, streams, exception handling, and template classes"
     },
     Csharp:{
+        title:"C#",
         image:{
             src:"./logos/Csharp-logo.png"
         },
         text:"I have knowledge on the uses and implementation of asynchronous programming, delegates, and all OO concepts. I used this language to program for game development purposes with the Unity game engine."
     },
     Java:{
+        title:"Java",
         image:{
             src:"./logos/java-logo.svg"
         },
         text:"I have experience coding in Java"
     },
     prolog:{
+        title:"Swi prolog",
         image:{
             src:"./logos/swi-prolog-logo.svg"
         },
         text:"I have experience coding in swi prolog"
     },
     Scheme:{
+        title:"Scheme",
         image:{
             src:"./logos/scheme-logo.png"
         },
         text:"I have experience coding in scheme"
     },
     CSS:{
+        title:"CSS",
         image:{
             src:"./logos/css-logo.svg"
         },
         text:"Developed websites using stylesheets in css. The style for this website is made with css and bootstrap to create a responsive design."
     },
     Nodejs:{
+        title:"Node.js",
         image:{
             src:"./logos/nodejs-logo.png"
         },
         text:"I have experience coding with Nodejs"
     },
     Mongodb:{
+        title:"Mongodb",
         image:{
             src:"./logos/mongodb-logo.png"
         },
@@ -411,13 +423,13 @@ function loadGrid(main)
     let langRow = document.createElement("div");
         langRow.className = "row";
     for(let i in keys) {
-        addRowItem(langRow,keys[i][1].text,keys[i][1].image);
+        addRowItem(langRow,keys[i][1].title,keys[i][1].text,keys[i][1].image);
     }
     container.appendChild(langRow);
     
 }
 
-function addRowItem(row,text,img){
+function addRowItem(row,title,text,img){
     let container = document.createElement("div");
     container.className = "col-sm-4";
 
@@ -426,11 +438,16 @@ function addRowItem(row,text,img){
     image.style = "max-width:50px; max-height: 50px;";
     image.className = "img-fluid center";
 
+    let itemTitle = document.createElement("h");
+    itemTitle.innerHTML = title;
+    itemTitle.className = "center font-size-medium white";
+
     let item = document.createElement("p");
     item.innerHTML = text;
     item.className = "center font-size-small white gridItem";
 
     container.appendChild(image);
+    container.appendChild(itemTitle);
     container.appendChild(item);
 
     row.appendChild(container);

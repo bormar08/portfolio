@@ -121,7 +121,7 @@ p.margins {
     }
     
     .font-size-medium{
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .font-size-large{
@@ -129,29 +129,13 @@ p.margins {
     }
 } 
 
-
- @media only screen and (min-width: 768px) {
-    .font-size-small{
-        font-size: 18px;
-    }
-    
-    .font-size-medium{
-        font-size: 22px;
-    }
-    
-    .font-size-large{
-        font-size: 20px;
-    }
-
- }
- 
  @media only screen and (min-width: 992px) {
     .font-size-small{
         font-size: 20px;
     }
     
     .font-size-medium{
-        font-size: 30px;
+        font-size: 25px;
     }
     
     .font-size-large{
