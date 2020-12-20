@@ -303,7 +303,7 @@ let recordGrades = {
         },
         course8:{
             courseCode:"JAPA 1020",
-            courseName:"Natural History",
+            courseName:"First-Year Japanese 2",
             grade:"A-"
         },
         course9:{
