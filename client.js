@@ -332,7 +332,7 @@ let recordGrades = {
         course2:{
             courseCode:"COMP 2404",
             courseName:"Introduction to Software Engineering",
-            grade:"In Progress"
+            grade:"A+"
         },
         course3:{
             courseCode:"COMP 3000",
