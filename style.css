@@ -92,10 +92,10 @@ p.margins {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 0.5vw;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(27, 27, 27);
     padding: 0.5vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 1.5vw;
 }
 
@@ -113,6 +113,17 @@ p.margins {
         font-size: 25px;
     }
 
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 0.5vw;
+        background-color: rgb(27, 27, 27);
+        padding: 0.5vw;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 1.5vw;
+    }
+
  }
 
  @media only screen and (min-width: 600px) {
@@ -127,6 +138,8 @@ p.margins {
     .font-size-large{
         font-size: 25px;
     }
+
+    
 } 
 
  @media only screen and (min-width: 992px) {
