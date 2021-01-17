@@ -448,7 +448,7 @@ function loadUpperDiv(main){
 function loadGrid(main)
 {
     const container = document.createElement("div");
-    container.className = "container-fluid";
+    container.className = "container-fluid paddings";
     main.appendChild(container);
 
     
@@ -496,7 +496,10 @@ function resume(){
     const main = document.getElementById("main");
     resetmain(main);
     loadResumeHeader(main);
-    loadResumemain(main);
+    const container = document.createElement("div");
+    container.className = "page";
+    loadResumemain(container);
+    main.appendChild(container);
 
 }
 
