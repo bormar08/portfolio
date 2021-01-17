@@ -103,7 +103,7 @@ let me = {
     program:"Bachelor of Computer Science",
     stream:"Mobile Computing",
     minor:"Minor in Psychology",
-    GPA:"10.37",
+    GPA:"10.55",
     letterGrade:"A-",
     schoolTermsCompleted:"5",
     workTermsCompleted:"2",
