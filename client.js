@@ -7,6 +7,13 @@ let job = {
 };
 
 let langs = {
+    react: {
+        title: "React",
+        image:{
+            src: "./logos/React-logo.png"
+        },
+        text: "i have created a burger building application that uses features such as Redux, React Routing, React Hooks, and more by following a course on udemy. I am currently working on creating a to-do list app that will use similar feature as the burger building app"
+    },
     html5:{
         title:"HTML5",
         image: {
@@ -131,7 +138,7 @@ let cv = {
         title:"RELEVANT SKILLS, EXPERIENCES, AND ACCOMPLISHMENTS",
         technical:{
             title:"Technical Skills",
-            item1:"Experience programming in Java, Python, C#, C, Visual Studio Code, Scheme, JavaScript, HTML, CSS, Node.js, and MongoDB",
+            item1:"Experience programming in Java, Python, C#, C, Visual Studio Code, Scheme, React JS, Redux, JavaScript, HTML, CSS, Node.js, and MongoDB",
             item2:"Created black-box test cases using Java to debug a grade calculator program by generating test cases and looking at the actual output compared to the expected output",
             item3:"Developed an algorithm to check whether students failed or passed their course " +
             "using Python by iterating through data and calculating their grades to ensure the student met the requirements for passing the course",
