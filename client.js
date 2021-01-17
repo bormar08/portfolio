@@ -12,7 +12,7 @@ let langs = {
         image: {
             src:"./logos/html5-logo.png"
         },
-        text: "I have designed this website in HTML5"
+        text: "I have designed this website in HTML5. i have also designed other websites such as the restaurant website using HTML5"
     },
     python:{
         title:"Python",
@@ -54,7 +54,7 @@ let langs = {
         image:{
             src:"./logos/java-logo.svg"
         },
-        text:"I have experience coding in Java"
+        text:"I have extensive experience coding in Java. I have developed a Sudoku checker, weather report generator and more using OO concepts"
     },
     prolog:{
         title:"Swi prolog",
@@ -82,7 +82,7 @@ let langs = {
         image:{
             src:"./logos/nodejs-logo.png"
         },
-        text:"I have experience coding with Nodejs"
+        text:"I have experience coding with Node.js. I have used it in the development of the restaurant website and will be using it in my new React application currently in development"
     },
     Mongodb:{
         title:"Mongodb",
