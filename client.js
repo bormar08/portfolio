@@ -40,7 +40,7 @@ let langs = {
         image:{
             src:"./logos/C-logo.svg"
         },
-        text:"Created programs that took advangtade of multithreading to reduce computing times."
+        text:"Created programs that took advantage of multithreading to reduce computing times."
     },
     Cpp:{
         title:"C++",
